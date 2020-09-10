@@ -32,7 +32,19 @@ and should return a number.
 
 For example, burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2*/
 
+burger.discount = function(str){
+    if(str.toLowerCase() == 'teacher'){
+      return this.price - (this.price * 0.25);
+    } else if (str.toLowerCase() == 'student'){
+      return this.price - (this.price * 0.25);
+    } else if (str.toLowerCase() == 'public'){
+      return this.price - (this.price * 0.10);
+    } else {
+      return 'Wrong Answer Dirtbag!';
+    }
+}
 
+console.log(burger.discount('Teacher'))
 
 ///////////////Reviews (MVP)///////////////////
 
