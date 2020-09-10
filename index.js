@@ -50,9 +50,9 @@ console.log(reviews);
 
 /* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays" */
 
-reviews[reviews.length - 1].feedback = 'This place is chill with really cool people, great for getting work done on weekdays.';
+reviews[reviews.length - 2].feedback = 'This place is chill with really cool people, great for getting work done on weekdays.';
 
-console.log(reviews[reviews.length - 1].feedback);
+console.log(reviews[reviews.length - 2].feedback);
 
 /*  Task 6: Write a function to return a review based on the index of the review in the array.
 
@@ -80,14 +80,15 @@ function getReviewByIndex(arr, index) {
 getLastReview should accept:
   (1) an array of objects 
   
-and should return a string in the format `name} gave the restaurant a {rating}, and their feedback was: {feedback}`
+and should return a string in the format `{name} gave the restaurant a {rating}, and their feedback was: {feedback}`
 
 For example, if getLastReview is invoked passing the reviews array it will return `Reyna gave the restaurant a 3.5 star review and their feedback was: "this place is chill with really cool people, great for getting work done on weekdays"`.
 */
-function getLastReview(/* code here */) {
-    /* code here */
+function getLastReview(arr) {
+    return `${arr[arr.length - 1].name} gave the restaurant a ${arr[arr.length - 1].rating}, and their feedback was: ${arr[arr.length - 1].feedback}`;
   } 
 
+  console.log(getLastReview(reviews));
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
 
