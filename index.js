@@ -88,12 +88,10 @@ and should return a string in the format `{name} gave the restaurant a {rating},
 */
 
 function getReviewByIndex(arr, index) {
-    for(let i = 0; i < reviews.length; i++){
       return `${arr[index].name} gave the restaurant a ${arr[index].rating}, and their feedback was: ${arr[index].feedback}`; 
-    }
   }
   
-  console.log(getReviewByIndex(reviews, 0))
+  console.log(getReviewByIndex(reviews, 8))
 
 /* Task 7: Write a function to get information about the most recent review called `getLastReview`
 
