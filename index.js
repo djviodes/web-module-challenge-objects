@@ -48,7 +48,11 @@ reviews.push({name: "David", rating: 0.5, feedback: "Would give it a full 5 but 
 
 console.log(reviews);
 
-/* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
+/* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays" */
+
+reviews[reviews.length - 1].feedback = 'This place is chill with really cool people, great for getting work done on weekdays.';
+
+console.log(reviews[reviews.length - 1].feedback);
 
 /*  Task 6: Write a function to return a review based on the index of the review in the array.
 
